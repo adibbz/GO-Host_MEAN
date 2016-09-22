@@ -1,0 +1,4 @@
+1. Connect to MongoDB
+2. Build routes for CRUD
+	-create: form you can fill out and add to db if you want. 
+3. Upload JSON file that gohost.py creates OR serve from server?

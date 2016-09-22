@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+ table(ng-controller="MainCtrl").sites.row
+  tbody
+   tr.header 
+    td IP Address
+    td Domain Name
+    td Wordpress Version
+    td Server Name
+    td Do we host?
+    td Edit
+    td Del
+  
+  form(ng-show="editing" ng-submit="editing = false")
+   tr(ng-repeat="x in myData | orderBy : 'domain'") 
+    td(ng-hide="editing") {{ x.ip }}
+    td(ng-show="editing")
+     input(type="text" placeholder="{{x.ip}}" ng-model="formData.ip")
+    td(ng-hide="editing") {{ x.domain }}
+    td(ng-show="editing") 
+     input(type="text" placeholder="{{x.domain}}" ng-model="formData.domain")
+    td(ng-hide="editing") {{ x.wp }}
+    td(ng-show="editing") 
+     input(type="text" placeholder="{{x.wp}}" ng-model="formData.wp")
+    td(ng-hide="editing") {{ x.host_name }}
+    td(ng-show="editing")
+     input(type="text" placeholder="{{x.host_name}}" ng-model="formData.host_name")
+    td(ng-hide="editing") {{ x.hosted ? 'Yes' : 'No' }}
+    td(ng-show="editing")
+     input(type="number" max="1" min="0" placeholder="{{ x.hosted }}" ng-model="formData.hosted")
+    td(ng-hide="editing")
+     span.icon-pencil(ng-click="editing = true")
+    td(ng-show="editing") 
+      span.icon-check(ng-click="update(x._id); editing = false")
+    td 
+     span.icon-close(ng-click="remove(x._id)")
+    
+
+
+

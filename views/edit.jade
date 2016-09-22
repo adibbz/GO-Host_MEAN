@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+ div.add-site
+  //h4 Add a Site
+  //hr
+  
+  div.row
+   div.small-12.medium-5.large-4.columns.large-centered.medium-centered
+    form(name="addform" novalidate)
+     div(ng-controller="FormCtrl").form-group
+      input(type="text" required placeholder="127.0.0.1" ng-model="formData.ip")
+      input(type="text" required placeholder="example.com" ng-model="formData.domain")
+      input(type="text" required placeholder="Wordpress Version(4.4.2)" ng-model="formData.wp")
+      input(type="text" required placeholder="Web03" ng-model="formData.host_name")
+      input(type="number" required placeholder="0 for no, 1 for yes" max="1" ng-model="formData.hosted")
+      button(type="submit" ng-click="addSite()" ng-disabled="addform.$invalid") EDIT SITE
+        

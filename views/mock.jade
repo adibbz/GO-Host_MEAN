@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+ table.sites
+  tbody
+   tr.header 
+    td IP Address
+    td Domain Name
+    td Wordpress Version
+    td Server Name
+    td Do we host?
+
+    each site in dataJSON.sites
+     tr 
+      td #{site.ip}
+      td #{site.domain}
+      td #{site.wp}
+      td #{site.host_name}
+      td #{site.hosted}
+

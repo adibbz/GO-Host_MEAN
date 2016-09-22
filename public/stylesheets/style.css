@@ -1,0 +1,89 @@
+body {
+  font: 14px "Inconsolata", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Inconsolata", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*-----------------------------------
+|
+|   Navigation
+|
+-----------------------------------*/
+.masthead {
+    margin-bottom: 3rem;
+}
+
+.top-bar-left {
+    height: 81px;
+}
+
+.top-bar-left .menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-bar-right {
+    height: 81px;
+}
+
+.top-bar-right .menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-bar-right .menu li .active {
+    color: white;
+    background: #00B7FF;
+}
+
+/*-----------------------------------
+|
+|   Home Page
+|
+-----------------------------------*/
+
+table.sites {
+    margin-top: 50px;
+}
+
+tr.header {
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+}
+
+span[class^="icon-"]:hover {
+    cursor: pointer;
+}
+
+table.sites input {
+    margin-bottom: 0;
+}
+
+
+/*-----------------------------------
+|
+|   Add a Site page
+|
+-----------------------------------*/
+
+.add-site .form-group button {
+    background: #000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+   
+
