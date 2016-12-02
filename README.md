@@ -8,6 +8,9 @@ Simple MEAN App that manages sites provided in JSON file output from the go-host
 npm install 
 ~~~~
 
+### Import Database ###
+Import data into your mongo database. Create a database named 'gohost' and a colleciton named 'sites'. Import documents located in '~/mock/mock_data.json'
+
 ### Start Server ###
 
 ~~~~

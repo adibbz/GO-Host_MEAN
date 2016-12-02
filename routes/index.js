@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var data = require('../mock/data.json');
+var mock_data = require('../mock/mock_data.json');
 var Site = require('../models/site');
 //var sitesEntry = require('../models/sitesEntry');
 
-var dataLists = Object.keys(data).map(function(value){
-	return data[value]
+var dataLists = Object.keys(mock_data).map(function(value){
+	return mock_data[value]
 });
 
 // GET home page. */
