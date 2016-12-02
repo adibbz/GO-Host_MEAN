@@ -19,4 +19,4 @@ npm run start or nodemon(if installed)
 ~~~~
 
 
-**Have Fun! Create an entry, delete and view all of them. Update route soon to come**
+**Have Fun! Mess around and utilize basic CRUD operations**
